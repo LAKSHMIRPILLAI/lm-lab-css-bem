@@ -1,99 +1,121 @@
-  
-  .section-title {
-    font-size: 50px;
-    font-weight: var(--bold);
-    margin-top: 40px;
-    text-align: center;
-    text-transform: uppercase;
+.section-title {
+  font-size: 50px;
+  font-weight: var(--bold);
+  margin-top: 40px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 20px auto;
+  max-width: 1200px;
+}
+
+@media only screen and (min-width: 600px) {
+  body {
+    background-color: beige;
   }
-  
-  .container { 
-    display: flex; 
-    flex-flow: row wrap;
-    justify-content: center;
-    margin: 20px auto;
-    max-width: 1200px;
-  }
-  @media only screen and (min-width: 600px) {
-     body {
-      background-color: beige;
-    }
-  }
-  
+}
+
 .card {
-    /* Add shadows to create the "card" effect */
-    max-width: 200px;
-    display: inline-block;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    transition: 0.3s;
-    border-radius: 5px; /* 5px rounded corners */
-    text-align: center;
-    flex: 0 0 100%;
-    display: flex;  /* Necessary for the cards to have the same height */
-    flex-direction: column;  /* To be able to push the childrens down */
-  }
-  
+  /* Add shadows to create the "card" effect */
+  max-width: 200px;
+  display: inline-block;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  border-radius: 5px;
+  /* 5px rounded corners */
+  text-align: center;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  /* Necessary for the cards to have the same height */
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  /* To be able to push the childrens down */
   /* On mouse-over, add a deeper shadow */
-  .card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-  }
-  
-  .card__footer {
-    padding: 2px 16px;
-  }
-  .card__header {
-    padding: 2px 16px;
-  }
+}
 
-  .cardVader {
-    background: #89051d;
-    color: white;
-  }
-  
-  .cardYoda {
-    background: rgb(213, 222, 182);
-    color: black;
-  }
-  .cardHan{
-    background: rgb(8, 3, 83);
-    color: white;
-  }
+.card:hover {
+  -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
 
-  .cardR2 {
-    background: rgb(214, 213, 132);
-    color: black;
-  }
+.card__footer {
+  padding: 2px 16px;
+}
 
-  .card__image {
-    max-width: 200px;
-    height: 125px;
-  }
+.card__header {
+  padding: 2px 16px;
+}
 
-  .button {
-    border: none;
-    outline: 0;
-    display: inline-block;
-    padding: 8px;
-    cursor: pointer;
-    width: 100%;
-    margin-top: auto;
-  }
-  .button__text {
-    color: white;
-    text-align: center;
-    font-size: 18px;
-  }
+.card__image {
+  max-width: 200px;
+  height: 125px;
+}
 
-  .button--danger{
-    background-color: red;
-  }
+.cardVader {
+  background: #89051d;
+  color: white;
+}
 
-  .button--safe{
-    background-color: green;
-  }
+.cardYoda {
+  background: #d5deb6;
+  color: black;
+}
 
+.cardHan {
+  background: #080353;
+  color: white;
+}
 
-  .button:hover {
-    opacity: 0.7;
-  }
-/* Happy coding! */
+.cardR2 {
+  background: #d6d584;
+  color: black;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  cursor: pointer;
+  width: 100%;
+  margin-top: auto;
+}
+
+.button__text {
+  color: white;
+  text-align: center;
+  font-size: 18px;
+}
+
+.button--danger {
+  background-color: red;
+}
+
+.button--safe {
+  background-color: green;
+}
+
+.button:hover {
+  opacity: 0.7;
+}
+/*# sourceMappingURL=styles.css.map */
