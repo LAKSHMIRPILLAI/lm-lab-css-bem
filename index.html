@@ -6,24 +6,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles.css">
-    <title>BEM Notation & OOCSS: Writing scaleable CSS</title>
+    <title >BEM Notation & OOCSS: Writing scaleable CSS</title>
 </head>
 
 <body>
-    <h1>BEM Wars</h1>
+    <h1 class="section-title">BEM Wars</h1>
     <div class="container">
         <div class="card cardVader"> 
             <header class="card__header">
                 <h2>The Dark Side</h2>
             </header>
-            <img src="./images/vader.jpeg" alt="Vader"> 
+            <img src="./images/vader.jpeg" alt="Vader" class="card__image"> 
             <footer class="card__footer">
-                <p>Nesting!</p>
-                <p>Conflict!</p>
-                <p>Specificity Wars!</p>
-                <p>Cookies</p>
+                <p>Darth Vader</p>
             </footer>
-            <button class="button buttonVader">Danger</button>
+            <button class="button button__text button--danger">Danger</button>
         </div>
         &nbsp;
         &nbsp;
@@ -31,15 +28,37 @@
             <header class="card__header" >
                 <h2>The Force</h2>
             </header>
-            <img src="./images/yoda.jpeg" alt="Yoda">
+            <img src="./images/yoda.jpeg" alt="Yoda" class="card__image">
             <footer class="card__footer">
-                <p>Love</p>
-                <p>Beauty</p>
-                <p>CSS that Scales!</p>
-                <p>Great warrior.Wars not make one great!</p>
+                <p>Yoda</p>
             </footer>
-             <button class="button buttonYoda">Safe</button>
+             <button class="button button__text button--safe">Safe</button>
         </div>
+        &nbsp;
+        &nbsp;
+        <div class="card cardHan">
+            <header class="card__header" >
+                <h2>The Dark Side</h2>
+            </header>
+            <img src="https://static2.srcdn.com/wordpress/wp-content/uploads/2019/11/Han-Solo-Blaster-Millenium-Falcon-A-New-Hope-Cropped.jpg?q=50&fit=crop&w=740&h=370&dpr=1.5" alt="Han Solo" class="card__image">
+            <footer class="card__footer">
+                <p>Han Solo</p>
+            </footer>
+             <button class="button button__text button--danger">Danger</button>
+        </div>
+        &nbsp;
+        &nbsp;
+        <div class="card cardR2"> 
+            <header class="card__header">
+                <h2>The Force</h2>
+            </header>
+            <img src="https://static2.srcdn.com/wordpress/wp-content/uploads/2022/02/r2-d2-book-of-boba-fett-artoo.jpg?q=50&fit=crop&w=740&h=370&dpr=1.5" alt="R2-D2" class="card__image"> 
+            <footer class="card__footer">
+                <p>R2-D2</p>
+            </footer>
+            <button class="button button__text button--safe">Safe</button>
+        </div>
+ 
     </div>
 </body>
 
