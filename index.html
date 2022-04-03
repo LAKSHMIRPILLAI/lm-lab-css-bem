@@ -12,22 +12,33 @@
 <body>
     <h1>BEM Wars</h1>
     <div class="container">
-        <div>
-            <h2>The Dark Side</h2>
-            <img src="./images/vader.jpeg">
-            <p>Nesting!</p>
-            <p>Conflict!</p>
-            <p>Specificity Wars!</p>
-            <p>Cookies</p>
+        <div class="card cardVader"> 
+            <header class="card__header">
+                <h2>The Dark Side</h2>
+            </header>
+            <img src="./images/vader.jpeg" alt="Vader"> 
+            <footer class="card__footer">
+                <p>Nesting!</p>
+                <p>Conflict!</p>
+                <p>Specificity Wars!</p>
+                <p>Cookies</p>
+            </footer>
+            <button class="button buttonVader">Danger</button>
         </div>
-
-        <div>
-            <h2>The Force</h2>
-            <img src="./images/yoda.jpeg">
-            <p>Love</p>
-            <p>Beauty</p>
-            <p>CSS that Scales!</p>
-            <p>Great warrior. Wars not make one great!</p>
+        &nbsp;
+        &nbsp;
+        <div class="card cardYoda">
+            <header class="card__header" >
+                <h2>The Force</h2>
+            </header>
+            <img src="./images/yoda.jpeg" alt="Yoda">
+            <footer class="card__footer">
+                <p>Love</p>
+                <p>Beauty</p>
+                <p>CSS that Scales!</p>
+                <p>Great warrior.Wars not make one great!</p>
+            </footer>
+             <button class="button buttonYoda">Safe</button>
         </div>
     </div>
 </body>
